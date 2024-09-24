@@ -1,0 +1,258 @@
+{
+  "template": "leftBar",
+  "colorScheme": "light",
+  "overlay": "googlemeet",
+  "title": "Ishaan",
+  "showHeader": true,
+  "showFooter": true,
+  "support": {
+    "email": "",
+    "phone": ""
+  },
+  "categories": [
+    {
+      "title": "HDMI Switching",
+      "icon": "mdi-apps",
+      "type": "btngrid",
+      "config": {
+        "title": "HDMI Switching",
+        "showTitle": true,
+        "instruction": "Please Select the HDMI Matrix to Select Source in (Input-output) Format",
+        "showInstruction": true,
+        "gridJustify": "start",
+		"gridSize": 2,
+        "btns": [
+            {"text":"PC","channel":1,"icon": ""},
+            {"text":"Recording 1","channel":11,"icon": ""},
+            {"text":"Control Room Wall Plate","channel":2,"icon": ""},
+			{"text":"Recording 2","channel":12,"icon": ""},
+            {"text":"Wireless Presentation","channel":3,"icon": ""},
+            {"text":"All Displays","channel":13,"icon": ""}, 
+            {"text":"Floor Box","channel":4,"icon": ""},
+			{"text":"Projector","channel":14,"icon": ""}
+        ]
+      }
+    },
+    {
+      "title": "Content Sharing",
+      "showTitle": true,
+      "type": "vertbtngroup",
+      "icon": "mdi-video-switch",
+      "instruction": "Select an available source to show on screen or share during a call",
+      "showInstruction": true,
+      "presets": {
+        "config": {
+          "title": "Presets",
+          "showTitle": true,
+          "instruction": "",
+          "showInstruction": false,
+          "gridJustify": "start",
+          "gridSize": 6,
+          "btns": [
+            {
+              "text": "Local Meeting",
+              "channel": 571,
+              "icon": "mdi-alpha-a-circle"
+            },
+            {
+              "text": "Video Conferencing",
+              "channel": 572,
+              "icon": "mdi-alpha-b-circle"
+            }
+          ]
+        }
+      },
+      "sources": {
+        "mutuallyExclusive": true,
+        "showIcon": true,
+        "spacing": 1,
+        "btns": [
+          {
+            "label":"PC",
+            "icon": "mdi-desktop-tower-monitor",
+            "channel": 281
+          },
+          {
+            "label": "Control Room Wall Plate",
+            "icon": "mdi-laptop",
+            "channel": 283
+          },
+		  {
+            "label": "Wireless Presentation",
+            "icon": "mdi-video-wireless",
+            "channel": 282
+          },
+         
+          {
+            "label": "Rear HDMI",
+            "icon": "mdi-video-input-hdmi",
+            "channel": 284
+          },
+          {
+            "label": "Stop Content",
+            "icon": "mdi-television-stop",
+            "channel": 285,
+            "color": "danger"
+          }
+        ]
+      }
+    },
+    {
+      "title": "Displays",
+      "showTitle": true,
+      "instruction": "Turn displays on or off as needed for this event",
+      "showInstruction": true,
+      "icon": "mdi-monitor",
+      "type": "displays",
+      "presets": {
+        "config": {
+          "title": "Presets",
+          "showTitle": true,
+          "instruction": "",
+          "showInstruction": false,
+          "gridJustify": "start",
+          "gridSize": 6,
+          "btns": [
+            {
+              "text": "All On",
+              "channel": 592,
+              "icon": "mdi-alpha-a-circle"
+            },
+            {
+              "text": "All Off",
+              "channel": 591,
+              "icon": "mdi-alpha-b-circle"
+            }
+          ]
+        }
+      },
+      "displays": [
+        {
+          "title": "Display 1",
+          "port": 1,
+          "showTitle": true,
+          "mode": "sb-discreet",
+          "label": [
+            ""
+          ],
+          "margin": 0
+        },
+        {
+          "title": "Display 2",
+          "port": 2,
+          "showTitle": true,
+          "mode": "sb-discreet",
+          "margin": 0
+        },
+        {
+          "title": "Display 3",
+          "port": 3,
+          "showTitle": true,
+          "mode": "sb-discreet",
+          "margin": 0
+        },
+        {
+          "title": "Display 4",
+          "port": 4,
+          "showTitle": true,
+          "mode": "sb-discreet",
+          "margin": 0
+        },
+        {
+          "title": "Display 5",
+          "port": 5,
+          "showTitle": true,
+          "mode": "sb-discreet",
+          "margin": 0
+        }
+     
+	 ]
+    },
+    {
+      "title": "Cameras",
+      "showTitle": true,
+      "type": "cameras",
+      "icon": "mdi-arrow-all",
+      "instruction": "Configure the movable cameras as needed or select a preset from the list below",
+      "showInstruction": true,
+      "presets": {
+        "config": {
+          "title": "Presets",
+          "showTitle": true,
+          "gridJustify": "start",
+          "gridSize": 6,
+          "btns": [
+            {"text":"PRESET 10000","channel":261,"icon": "" , "style": "backgroundColor: #ffff00;textColor: #000000;fontSize: 24px;"
+            },
+            {"text":"Preset 20000","channel":262,"icon": "",  "style": "backgroundColor: #ffff00;textColor: #000000;fontSize: 17px;"},
+            {"text":"Preset 30000","channel":263,"icon": "", "style": "backgroundColor: #ffff00;textColor: #000000;fontSize: 14px;"},
+			      {"text":"Preset 4","channel":264,"icon": ""},
+            {"text":"Preset 5","channel":265,"icon": ""},
+            {"text":"Preset 6","channel":266,"icon": ""}
+          ]
+        }
+      },
+      "cameras": [
+        {
+          "title": "Front Cam",
+          "type": "style1",
+          "showTitle": true,
+          "port": 1
+        }
+      ]
+    },
+    {
+      "title": "Projector",
+      "showTitle": true,
+      "instruction": "This is the instructions for the Projector ",
+      "showInstruction": true,
+      "icon": "mdi-window-shutter",
+      "type": "shades",
+      "presets": {
+        "config": {
+          "title": "Presets",
+          "showTitle": true,
+          "instruction": "",
+          "showInstruction": false,
+          "gridJustify": "start",
+          "gridSize": 6,
+          "btns": [
+            {
+              "text": "ON",
+              "channel": 521,
+              "icon": "mdi-alpha-a-circle"
+            },
+            {
+              "text": "Standby",
+              "channel": 522,
+              "icon": "mdi-alpha-b-circle"
+            },
+            {
+              "text": "Off",
+              "channel": 523,
+              "icon": "mdi-alpha-c-circle"
+            }
+          ]
+        }
+      },
+      "shades": [
+        {
+          "title": "Projector Screen",
+          "port": 1,
+          "showTitle": true,
+          "showStop": true,
+          "showText": false
+        } 
+        
+      ]
+    }
+    
+  ],
+  "volume": {
+    "nxLevel": 1,
+    "showThumb": false,
+    "justify": "center",
+    "setMuteStates": true
+  },
+  "showVolume": true
+}

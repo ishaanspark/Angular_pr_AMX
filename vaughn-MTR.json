@@ -1,0 +1,89 @@
+{
+  "template": "sideBySide",
+  "showHeader": false,
+  "colorScheme": "dark",
+  "overlay": "yealink",
+  "title": "Vaughn Conference Room",
+  "support": {
+    "email": "support@myproject.com",
+    "phone": "844-776-4899"
+  },
+  "displays": {
+    "title": "Display Power",
+    "config": [
+      {
+        "title": "Displays",
+        "showTitle": true,
+        "mode": "toggle",
+        "margin": 0
+      }
+    ]
+  },
+  "sources": {
+    "title": "Shared Content",
+    "config": {
+      "mutuallyExclusive": true,
+      "showIcon": true,
+      "spacing": 1,
+      "btns": [
+        {"label":"Room PC","icon":"mdi-desktop-tower-monitor","channel":281},
+        {"label":"Wireless Presentation","icon":"mdi-video-wireless","channel":282},
+        {"label":"Front HDMI","icon":"mdi-laptop","channel":283},
+        {"label":"Rear HDMI","icon":"mdi-video-input-hdmi","channel":284},
+        {"label":"Stop Content","icon":"mdi-television-stop","channel":285, "color": "danger"}
+      ]
+    }
+  },
+  "volume": {
+    "nxLevel": 1,
+    "showThumb": false
+  },
+  "devices": [
+    {
+      "title": "Camera Front",
+      "icon" : "mdi-camera-control",
+      "content": "camera",
+      "config": {
+        "presets": [
+          {"text":"Front Wide","channel":261},
+          {"text":"Table Left","channel":262},
+          {"text":"Table Right","channel":263}
+        ]
+      }
+    },
+    {
+      "title": "Wireless ",
+      "icon" : "mdi-camera-wireless",
+      "content" : "wireless",
+      "config": {
+        "instructions":"Connect your device via the USB button, and press the button to begin.     Connect smartphones, tablets or other wireless devices via mobile apps, the available link, or screen mirroring.",
+        "url":"http://mywirelessdevice.com",
+        "code":"1988"
+      }
+    },
+    {
+      "title": "Table - Front",
+      "icon" : "mdi-laptop",
+      "content": "hero",
+      "config": {
+        "icon": "mdi-video-input-hdmi",
+        "title": "Front HDMI ",
+        "body":"Find the HDMI cable in the front of the table and connect to the laptops video output."
+      }
+    },
+    {
+      "title": "Table - Back",
+      "icon": "mdi-video-input-hdmi",
+      "content": "hero",
+      "config": {
+        "icon": "mdi-video-input-hdmi",
+        "title": "Back HDMI ",
+        "body":"Find the HDMI cable in the front of the table and connect to the laptops video output."
+      }
+    }
+
+
+
+  ]
+
+}

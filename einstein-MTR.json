@@ -1,0 +1,314 @@
+{
+  "template": "leftBar",
+  "colorScheme": "dark",
+  "overlay": "yealink",
+  "title": "Einstein Conference Room",
+  "showHeader": false,
+  "showFooter": false,
+  "support": {
+    "email": "einstein@mysupport.com",
+    "phone": "844-776-4899"
+  },
+  "categories": [
+    {
+      "title": "Presets",
+      "icon": "mdi-apps",
+      "type": "btngrid",
+      "config": {
+        "title": "Presets",
+        "showTitle": true,
+        "instruction": "Recall complete room presets to set the mood for this meeting!",
+        "showInstruction": true,
+        "gridSize": 3,
+        "btns": [
+          {"text":"Preset 1","channel":501,"icon": "mdi-alpha-a-circle"},
+          {"text":"Preset 2","channel":502,"icon": "mdi-alpha-b-circle"},
+          {"text":"Preset 3","channel":503,"icon": "mdi-alpha-c-circle"},
+          {"text":"Preset 4","channel":504,"icon": "mdi-alpha-d-circle"},
+          {"text":"Preset 5","channel":505,"icon": "mdi-alpha-e-circle"},
+          {"text":"Preset 6","channel":506,"icon": "mdi-alpha-f-circle"},
+          {"text":"Preset 7","channel":507,"icon": "mdi-alpha-g-circle"},
+          {"text":"Preset 8","channel":508,"icon": "mdi-alpha-h-circle"},
+          {"text":"Preset 9","channel":509,"icon": "mdi-alpha-i-circle"}
+        ]
+      }
+    },
+    {
+      "title": "Content Sharing",
+      "showTitle": true,
+      "type": "vertbtngroup",
+      "icon": "mdi-video-switch",
+      "instruction": "Select an available source to show on screen or share during a call",
+      "showInstruction": true,
+      "presets": {
+        "config": {
+          "title": "Presets",
+          "showTitle": true,
+          "instruction": "",
+          "showInstruction": false,
+          "gridJustify": "start",
+          "gridSize": 6,
+          "btns": [
+            {
+              "text": "Table",
+              "channel": 571,
+              "icon": "mdi-alpha-a-circle"
+            },
+            {
+              "text": "Podium",
+              "channel": 572,
+              "icon": "mdi-alpha-b-circle"
+            }
+          ]
+        }
+      },
+      "sources": {
+        "mutuallyExclusive": true,
+        "showIcon": true,
+        "spacing": 1,
+        "btns": [
+          {"label":"Room PC","icon":"mdi-desktop-tower-monitor","channel":281},
+          {"label":"Wireless Presentation","icon":"mdi-video-wireless","channel":282},
+          {"label":"Front HDMI","icon":"mdi-laptop","channel":283},
+          {"label":"Rear HDMI","icon":"mdi-video-input-hdmi","channel":284},
+          {"label":"Stop Content","icon":"mdi-television-stop","channel":285, "color": "danger"}
+        ]
+      }
+    },
+    {
+      "title": "Displays",
+      "showTitle": true,
+      "instruction": "Turn displays on or off as needed for this event",
+      "showInstruction": true,
+      "icon": "mdi-monitor",
+      "type": "displays",
+      "presets": {
+        "config": {
+          "title": "Presets",
+          "showTitle": true,
+          "instruction": "",
+          "showInstruction": false,
+          "gridJustify": "start",
+          "gridSize": 6,
+          "btns": [
+            {"text":"All On","channel":592,"icon": "mdi-alpha-a-circle"},
+            {"text":"All Off","channel":591,"icon": "mdi-alpha-b-circle"}
+          ]
+        }
+      },
+      "displays": [
+          {
+            "title": "Left Display",
+            "port": 1,
+            "showTitle": true,
+            "mode": "sb-toggle",
+            "label":[""],
+            "margin": 0
+          },
+          {
+            "title": "Right Display",
+            "port": 2,
+            "showTitle": true,
+            "mode": "sb-discreet",
+            "margin": 0
+          },
+          {
+            "title": "Center Display",
+            "port": 3,
+            "showTitle": true,
+            "mode": "sb-discreet",
+            "margin": 0
+          },
+          {
+            "title": "Back Display",
+            "port": 4,
+            "showTitle": true,
+            "mode": "sb-discreet",
+            "margin": 0
+          },
+          {
+            "title": "Podium Display",
+            "port": 5,
+            "showTitle": true,
+            "mode": "sb-discreet",
+            "margin": 0
+          }
+        ]
+    },
+    {
+      "title": "Cameras",
+      "showTitle": true,
+      "type": "cameras",
+      "icon": "mdi-arrow-all",
+      "instruction": "Configure the movable cameras as needed or select a preset from the list below",
+      "showInstruction": true,
+      "presets": {
+        "config": {
+          "title": "Presets",
+          "showTitle": true,
+          "gridJustify": "start",
+          "gridSize": 6,
+          "btns": [
+            {"text":"Wide","channel":261,"icon": "mdi-account-group"},
+            {"text":"Podium","channel":262,"icon": "mdi-podium-gold"},
+            {"text":"Privacy","channel":263,"icon": "mdi-eye-off"}
+          ]
+        }
+      },
+      "cameras": [
+        {
+          "title": "Front Cam",
+          "type": "style1",
+          "showTitle": true,
+          "port": 1
+        }
+      ]
+    },
+    {
+      "title": "Shades",
+      "showTitle": true,
+      "instruction": "This is the instructions for the shades group ",
+      "showInstruction": true,
+      "icon": "mdi-window-shutter",
+      "type": "shades",
+      "presets": {
+        "config": {
+           "title": "Presets",
+           "showTitle": true,
+           "instruction": "",
+           "showInstruction": false,
+           "gridJustify": "start",
+           "gridSize": 6,
+           "btns": [
+             {"text":"All Open","channel":521,"icon": "mdi-alpha-a-circle"},
+             {"text":"All Close","channel":522,"icon": "mdi-alpha-b-circle"},
+             {"text":"All Mid","channel":523,"icon": "mdi-alpha-c-circle"}
+           ]
+        }
+      },
+      "shades": [
+        {
+          "title": "Left Shades",
+          "port": 1,
+          "showTitle": true,
+          "showStop": true,
+          "showText": false
+        },
+        {
+          "title": "Mid Shades",
+          "port": 2,
+          "showTitle": true,
+          "showStop": true,
+          "showText": false
+        },
+        {
+          "title": "Right Shades",
+          "port": 3,
+          "showTitle": true,
+          "showStop": true,
+          "showText": false
+        },
+        {
+          "title": "Back Shades",
+          "port": 4,
+          "showTitle": true,
+          "showStop": true,
+          "showText": false
+        },
+        {
+          "title": "Front Shades",
+          "port": 5,
+          "showTitle": true,
+          "showStop": true,
+          "showText": false
+        },
+        {
+          "title": "Podium Shades",
+          "port": 6,
+          "showTitle": true,
+          "showStop": true,
+          "showText": false
+        }
+
+      ]
+
+    },
+    {
+      "title": "Lights",
+      "icon": "mdi-lightbulb-on",
+      "showTitle": true,
+      "instruction": "Some instruction block can go here.",
+      "showInstruction": true,
+      "type": "lights",
+      "presets": {
+        "config": {
+          "title": "Presets",
+          "showTitle": true,
+          "instruction": "",
+          "showInstruction": false,
+          "gridJustify": "start",
+          "gridSize": 6,
+          "btns": [
+            {
+              "text": "On Call",
+              "channel": 541,
+              "icon": "mdi-alpha-a-circle"
+            },
+            {
+              "text": "Standard",
+              "channel": 542,
+              "icon": "mdi-alpha-b-circle"
+            },
+            {
+              "text": "Cleaning",
+              "channel": 543,
+              "icon": "mdi-alpha-c-circle"
+            }
+          ]
+        }
+      },
+      "lights": [
+        {
+          "port": 1,
+          "level": 9,
+          "type": "dimmable",
+          "title": "Overhead",
+          "showTitle": true,
+          "justify": "start",
+          "max": 100,
+          "initValue": 50,
+          "showValue": true,
+          "changeOn": "input"
+        },
+        {
+          "port": 1,
+          "level": 10,
+          "type": "dimmable",
+          "title": "Track",
+          "showTitle": true,
+          "justify": "start",
+          "max": 100,
+          "initValue": 50,
+          "showValue": true
+        },
+        {
+          "port": 1,
+          "channel": 563,
+          "type": "toggle",
+          "title": "Bar",
+          "showTitle": true,
+          "color": "bool",
+          "onLabel": "On",
+          "offLabel": "Off"
+        }
+      ]
+    }
+
+  ],
+  "volume": {
+    "nxLevel": 1,
+    "showThumb": false,
+    "justify": "center"
+  },
+  "showVolume": true
+}
